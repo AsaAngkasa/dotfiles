@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+WALLPAPER="$(nsxiv -otb ~/Wallpapers)" || exit 1
+
+swww img --transition-type grow --transition-step 90 --transition-fps 120 $WALLPAPER && wal -i $WALLPAPER -q
+killall -9 waybar swaync
+waybar & swaync
+
+export WALLPAPER
+
+ln -sf $WALLPAPER ~/.config/rofi/Wallpaper/current_wallpaper
