@@ -1,0 +1,121 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "Adwaita Mono", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+
+    font-size: 10px;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+tooltip {
+    background: @color0; /* bg0 */
+    border: 1px solid  @color8; /*bg0*/
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: @color8; /* fg */
+    padding: 6px;
+}
+
+#workspaces {
+    background-color: @color0; /* bg0 */
+    padding: 5px 3px;
+    margin: 0 0 0 12px;
+    border-radius: 18px;
+    border: 1px solid @color1; /* bg0 */
+    color: @color8; /* fg */
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 3px;
+    border-radius: 50px;
+    color: transparent;
+    background-color: @color1; /* bg0 */
+    transition: all 0.3s ease-in;
+}
+
+#workspaces button.active {
+    background-color: @color3; /* color 3 */
+    color: @color0; /* bg0 */
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+    font-size: 13px;
+}
+
+#workspaces button.hover {
+    background-color: @color3; /* color */
+    color: @color0; /* bg0 */
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+}
+
+#workspaces button.urgent {
+    background-color: crimson;
+    color: @color0; /* bg0 */
+    border-radius: 16px;
+    min-width: 50px;
+    background-size: 400% 400%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#battery,
+#pulseaudio,
+#network,
+#clock,
+#mpris {
+    background-color: @color0; /* bg0 */
+    padding: 0 15px 0 15px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @color8; /*bg0 */
+}
+
+#clock {
+    color: @color6 /* color */
+}
+
+#pulseaudio {
+    color: @color6 /* color */
+}
+
+#network {
+    color: @color6 /* color */
+}
+
+#battery {
+    color: @color6 /*color*/
+}
+
+#mpris {
+    color: @color6 
+}
+
+#custom-archicon {
+    background-color: @color0;
+    padding: 5px 0 5px 5px;
+    margin: 0 0 0 12px;
+    border-radius: 50px;
+    border: 1px solid @color8;
+}
+
+#custom-archicon {
+    color: @color6;
+}
+
+#custom-notification {
+    color: @color6;
+}
